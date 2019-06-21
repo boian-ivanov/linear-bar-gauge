@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linear bar gauge</title>
+    <script src="src/main.js"></script>
+</head>
+<body>
+    <div class="barGaugeWrapper"></div>
+    <script>
+        let el = document.querySelector('.barGaugeWrapper');
+        let linearGauge = new linearBarGauge(el, {
+            width: 400,
+            height: 10,
+            outerHeight: 50,
+            range: {
+                start: 0,
+                end: 10
+            },
+            segments: [
+                [20, '#32CD32'],
+                [50, '#FFC107'],
+                [80, '#FF6347']
+            ],
+            value: 2.3
+        });
+            // .drawPointer(4.1, '#000');
+    </script>
+</body>
+</html>
