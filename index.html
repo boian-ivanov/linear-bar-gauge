@@ -12,17 +12,19 @@
         let linearGauge = new linearBarGauge(el, {
             width: 400,
             height: 10,
-            outerHeight: 50,
+            outerHeight: 100,
             range: {
                 start: 0,
                 end: 10
             },
             segments: [
-                [20, '#32CD32'],
-                [50, '#FFC107'],
-                [80, '#FF6347']
+                [10, '#FF6347'],
+                [30, '#FFC107'],
+                [50, '#32CD32'],
+                [70, '#FFC107'],
+                [90, '#FF6347']
             ],
-            value: 2.3
+            value: 6.3
         });
             // .drawPointer(4.1, '#000');
     </script>
